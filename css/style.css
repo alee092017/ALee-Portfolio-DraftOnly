@@ -1,8 +1,9 @@
-body, html{
+body, html {
   height:100%;
   margin:0;
-  font-size:16px;
-  font-family: 'Amatic SC', cursive;
+  font-size:26px;
+  font-family: 'Pompiere', cursive;
+  /*font-family: 'Amatic SC', cursive;*/
   font-weight:400;
   line-height:1.8em;
   color:#666;
@@ -13,7 +14,7 @@ body, html{
 }
 */
 
-.pimg1, .pimg2, .pimg3{
+.pimg1, .pimg2, .pimg3 {
   position:relative;
   opacity:0.50;
   background-position:center;
@@ -27,54 +28,54 @@ body, html{
   background-attachment:fixed;
 }
 
-.pimg1{
+.pimg1 {
   background-image:url('../img/image1.jpg');
   min-height:100%;
 }
 
-.pimg2{
+.pimg2 {
   background-image:url('../img/image2.jpg');
   min-height:400px;
 }
 
-.pimg3{
+.pimg3 {
   background-image:url('../img/image3.jpg');
   min-height:400px;
 }
 
-.section{
+.section {
   text-align:center;
   padding:50px 80px;
 }
 
-.section-light{
+.section-light {
   background-color:#f4f4f4;
   color:#666;
 }
 
-.section-dark{
+.section-dark {
   background-color:#282e34;
   color:#ddd;
 }
 
-nav{
+nav {
   position:absolute;
   top:58%;
   width:100%;
   text-align: center;
 }
 
-.homenav{
+.homenav {
 /*  background-color: #111;*/
   /*text-align: center;*/
 
   color:#fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 30px;
   margin-left: 10px;
 }
 
-.ptext{
+.ptext {
   position:absolute;
   top:50%;
   width:100%;
@@ -82,7 +83,7 @@ nav{
   color:#000;
   font-size:27px;
   letter-spacing:8px;
-  text-transform:uppercase;
+  /*text-transform:uppercase;*/
 
 
 }
@@ -91,26 +92,43 @@ nav{
   border-radius: 90%;
 }
 
-.ptext .border{
+.ptext .border {
   background-color:#111;
   color:#fff;
   padding:20px;
 }
 
-.ptext .border.trans{
+.ptext .border.trans {
   background-color:transparent;
 }
 
-.bodynav{
+/*back to top link for each section (light dark ground separate)*/
+
+.bodynav {
   text-decoration: none;
   color:#111;
+  font-size: .8em;
 }
 
-.projnav{
+.bodynav-dark {
+  text-decoration: none;
+  color: white;
+  font-size: .8em;
+}
+
+/*styling for projects section only*/
+.projnav {
   text-decoration: none;
   color:white;
 }
 
+/*project description--change spacing and make lowercase*/
+.projdescr {
+  line-height: 1.0px;
+  text-transform: lowercase;
+}
+
+/*remove bullets*/
 li {
   list-style: none;
 }
@@ -119,4 +137,43 @@ li {
   .pimg1, .pimg2, .pimg3{
     background-attachment:scroll;
   }
+}
+
+/*make font awesome icons one color - right now they're mulitcolored for some odd reason*/
+i {
+  color: white;
+  margin: 10px;
+  /*font-size: 4.5em;*/
+}
+
+/*Uniform size--for the font awesome icons at the bottom of the contact me*/
+fa-2x {
+  font-size: 20px;
+}
+
+#resicon {
+  font-size: 45px;
+}
+
+/*make png's for projects white from black*/
+.railspng {
+  -webkit-filter: invert(100%);
+  width: 3%;
+  height: auto;
+  margin-bottom: -0.9em;
+
+}
+
+.reactpng {
+  -webkit-filter: invert(100%);
+  width: 2.5%;
+  height: auto;
+
+}
+
+.jspng {
+  -webkit-filter: invert(100%);
+  width: 2%;
+  height: auto;
+
 }
